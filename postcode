@@ -1,0 +1,18 @@
+#JSON postcode converter
+
+
+
+userinput= input(str("Please enter your postcode of your current location"))
+
+import urlib2
+import json
+
+request = Request("api.postcodes.io/postcodes/", userinput)
+openup = urlopen(request)
+local = json.loads(Postcode)
+
+Postcode = openup.read()
+
+
+
+print (local['Postcode'])
